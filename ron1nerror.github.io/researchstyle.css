@@ -1,0 +1,311 @@
+@import url('https://fonts.googleapis.com/css2?family=Silkscreen:wght@700&display=swap');
+
+
+body, h1, p {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Set tileable background image */
+  body {
+    background-image: url('grassTile.png');
+    background-repeat: repeat; /* This ensures the background image is tileable */
+  }
+  
+  /* Style for Baguettes Text */
+  .baguette-text {
+    position: absolute;
+    top: 10px;
+    left: 60px;
+    color: white; /* Or any color you prefer */
+    z-index: 2; /* Ensures it appears above other elements */
+    font-family: 'Silkscreen', sans-serif;
+    font-size: 40px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
+  }
+
+  .baguette-img {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 40px;
+    height: auto;
+    color: white; /* Or any color you prefer */
+  }
+
+  #baguette-img {
+    position: absolute;
+    top: 10px;
+    width: 40px;
+    height: auto;
+    color: white; /* Or any color you prefer */
+  }
+
+  .epicbaguette-img {
+    position: absolute;
+    top: 55px;
+    left: 10px;
+    width: 35px;
+    height: auto;
+    color: white; /* Or any color you prefer */
+  }
+
+  #epicbaguette-img {
+    position: absolute;
+    top: 10px;
+    width: 40px;
+    height: auto;
+    color: white; /* Or any color you prefer */
+  }
+
+  .researchbaguette-img {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 35px;
+    height: auto;
+    color: white; /* Or any color you prefer */
+  }
+
+  #researchbaguette-img {
+    position: absolute;
+    top: 100px;
+    width: 40px;
+    height: auto;
+    color: white; /* Or any color you prefer */
+  }
+
+  .BPS-text {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: white; /* Or any color you prefer */
+    z-index: 2; /* Ensures it appears above other elements */
+    font-family: 'Silkscreen', sans-serif;
+    font-size: 24px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
+  }
+
+  .RBoost-text {
+    position: absolute;
+    top: 50px;
+    right: 10px;
+    color: rgb(56, 186, 238); /* Or any color you prefer */
+    z-index: 2; /* Ensures it appears above other elements */
+    font-family: 'Silkscreen', sans-serif;
+    font-size: 24px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
+  }
+  
+  .epicbaguette-text {
+    position: absolute;
+    top: 55px;
+    left: 60px;
+    color: purple; /* Or any color you prefer */
+    z-index: 2; /* Ensures it appears above other elements */
+    font-family: 'Silkscreen', sans-serif;
+    font-size: 40px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
+  }
+
+  .researchbaguette-text {
+    position: absolute;
+    top: 100px;
+    left: 60px;
+    color: rgb(56, 186, 238); /* Or any color you prefer */
+    z-index: 2; /* Ensures it appears above other elements */
+    font-family: 'Silkscreen', sans-serif;
+    font-size: 40px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
+  }
+  
+  /* Style for Furnace Image/Button */
+  .bakery-container {
+    position: absolute;
+    top: 150px;
+    left: 10px; /* Center horizontally */
+    width: 400px;
+  }
+
+  .tile-title {
+    color: #00ff00;
+    font-family: 'Silkscreen', sans-serif;
+    font-size: 20px;
+    z-index: 2;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
+  }
+
+  .explainer-text1 {
+    position: absolute;
+  }
+
+  .explainer-text2 {
+    color: white;
+    position: absolute;
+    top: 50px;
+  }
+
+  .explainer-text3 {
+    color: white;
+    position: absolute;
+    top: 350px;
+  }
+
+  #buy-bakery-button {
+    position: absolute;
+    left: 10%;
+    width: 200px;
+    height: auto;
+    cursor: pointer;
+  }
+
+  .market-container {
+    position: absolute;
+    top: 150px;
+    left: 600px;
+    width: 400px;
+  }
+
+  #buy-market-button {
+    position: absolute;
+    left: 0%;
+    width: 300px;
+    height: auto;
+    cursor: pointer;
+  }
+  
+
+
+  @keyframes furnaceClick {
+    0% {
+        width: 200px;
+    }
+    50% {
+        width: 225px;
+    }
+    100% {
+        width: 200px;
+    }
+}
+
+.furnaceClick {
+    animation: furnaceClick 0.3s;
+}
+
+@keyframes marketClick {
+  0% {
+      width: 300px;
+  }
+  50% {
+      width: 325px;
+  }
+  100% {
+      width: 300px;
+  }
+}
+
+.marketClick {
+  animation: marketClick 0.3s;
+}
+
+@keyframes cantPurchase {
+    0% {
+        font-size: 20px;
+    }
+    50% {
+        font-size: 21px;
+    }
+    100% {
+        font-size: 20px;
+    }
+}
+
+.cantPurchase {
+    animation: cantPurchase 0.3s;
+}
+
+.furnace-container {
+    position: fixed; /* Fixed positioning */
+    bottom: 10px; /* 10px from the bottom */
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%); /* Center the container */
+    cursor: pointer; /* Change cursor to indicate it's clickable */
+}
+
+#furnace-arrow {
+    width: 50px; /* Adjust dimensions as needed */
+    height: auto;
+    cursor: pointer;
+}
+
+.furnace-text-container {
+    position: fixed; /* Fixed positioning */
+    bottom: 70px; /* 10px from the bottom */
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%); /* Center the container */
+    cursor: pointer; /* Change cursor to indicate it's clickable */
+    font-family: 'Silkscreen', sans-serif;
+    color: #00ff00;
+    font-size: 15px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
+}
+
+.researcher-container {
+  position: absolute;
+  top: 50%; /* Center vertically */
+  left: 50%; /* Center horizontally */
+  transform: translate(-50%, -50%); /* Center the container */
+}
+
+#research-button {
+  width: 200px; /* Adjust dimensions as needed */
+  height: auto;
+  cursor: pointer; /* Change cursor to indicate it's clickable */
+}
+
+.buy-research-container {
+  position: absolute; /* Fixed positioning */
+  top: 50%; /* Center vertically */
+  left: 80%; /* Center horizontally */
+  transform: translate(-50%, -50%); /* Center the container */
+  width: 400px;
+  cursor: pointer; /* Change cursor to indicate it's clickable */
+}
+
+#buy-research-button {
+  width: 100px; /* Adjust dimensions as needed */
+  height: auto;
+  cursor: pointer;
+}
+
+#buy-research-title {
+  position: absolute;
+  padding-left: 20px;
+}
+
+@keyframes furnaceUpgradeClick {
+  0% {
+    width: 100px;
+  }
+  50% {
+    width: 120px;
+  }
+  100% {
+    width: 100px;
+  }
+}
+
+.furnaceUpgradeClick {
+  animation: furnaceUpgradeClick 0.3s;
+}
+
+.research-info-container {
+  position: absolute; /* Fixed positioning */
+  top: 50%; /* Center vertically */
+  left: 20%; /* Center horizontally */
+  transform: translate(-50%, -50%); /* Center the container */
+  width: 400px;
+  height: 100px;
+  background-color: rgb(133, 75, 42);
+  border: rgb(99, 56, 31) solid 5px;
+}

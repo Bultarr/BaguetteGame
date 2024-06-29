@@ -1,0 +1,58 @@
+<!-- BEGIN: Stock Market Code Area -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Baguette Clicker</title>
+    <link rel="stylesheet" href="./stockmarket.css">
+    <script src="./script.js"></script>
+</head>
+<body onload="loadGame()">
+<div id="random-text">Buy! Buy! Buy!</div>
+
+<div class="baguette-text"><span id="baguette-count">0</span></div>
+<div class="baguette-img tooltip"><img id="baguette-img" src="./baguette.png" alt="Baguette"></img><span class="tooltiptext">Baguettes</span></div>
+
+<div class="epicbaguette-text"><span id="epicbaguette-count">0</span></div>
+<div class="epicbaguette-img tooltip"><img id="epicbaguette-img" src="./epicbaguette.png" alt="EpicBaguette"></img><span class="tooltiptext">Epic Baguettes</span></div>
+
+<div class="researchbaguette-text"><span id="researchbaguette-count">0</span></div>
+<div class="researchbaguette-img tooltip"><img id="researchbaguette-img" src="./researchbaguette.png" alt="ResearchBaguette"></img><span class="tooltiptext">Research Baguettes</span></div>
+
+<div class="BPS-text">BPS: <span id="BPS-count">0</span></div>
+<div class="RBoost-text">RB Boost: <span id="RBoost-count">0</span>x</div>
+
+<div id="stock-market">
+    <h2>You own: <span id="stock-count">0</span> Stocks</h2>
+    <h2>Stock valued at: <span id="stock-price">0</span></h2>
+    <button id="buyStocksButton" onclick="buyStocks(1)">Buy 1 Stock</button>
+    <button id="sellStocksButton" onclick="sellStocks(1)">Sell 1 Stock</button>
+    <button id="buyStocksButton" onclick="buyStocks(10)">Buy 10 </button>
+    <button id="sellStocksButton" onclick="sellStocks(10)">Sell 10 </button>
+</div>
+<div id="stock-market2">
+    <h2>You own: <span id="stock-count2">0</span> Stocks</h2>
+    <h2>Stock valued at: <span id="stock-price2">0</span></h2>
+    <button id="buyStocksButton" onclick="buyStocks2(1)">Buy 1 Stock</button>
+    <button id="sellStocksButton" onclick="sellStocks2(1)">Sell 1 Stock</button>
+    <button id="buyStocksButton" onclick="buyStocks2(10)">Buy 10 </button>
+    <button id="sellStocksButton" onclick="sellStocks2(10)">Sell 10 </button>
+</div>
+<div id="stock-market3">
+    <h2>You own: <span id="stock-count3">0</span> Stocks</h2>
+    <h2>Stock valued at: <span id="stock-price3">0</span></h2>
+    <button id="buyStocksButton" onclick="buyStocks3(1)">Buy 1 Stock</button>
+    <button id="sellStocksButton" onclick="sellStocks3(1)">Sell 1 Stock</button>
+    <button id="buyStocksButton" onclick="buyStocks3(10)">Buy 10 </button>
+    <button id="sellStocksButton" onclick="sellStocks3(10)">Sell 10 </button>
+</div>
+<div class="furnace-text-container">
+    <span> Go to the Furnace</span>
+</div>
+
+<div class="furnace-container">
+    <img src="./arrowDown.png" alt="Arrow Button" id="furnace-arrow" onclick="goFurnace()">
+    <script src="./script.js"></script>
+</div>
+</body>
+</html>

@@ -1,0 +1,364 @@
+@import url('https://fonts.googleapis.com/css2?family=Silkscreen:wght@700&display=swap');
+
+
+body, h1, p {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Set tileable background image */
+  body {
+    background-image: url('grassTile.png');
+    background-repeat: repeat; /* This ensures the background image is tileable */
+  }
+  
+  /* Style for Baguettes Text */
+  .baguette-text {
+    position: absolute;
+    top: 10px;
+    left: 60px;
+    color: white; /* Or any color you prefer */
+    z-index: 2; /* Ensures it appears above other elements */
+    font-family: 'Silkscreen', sans-serif;
+    font-size: 40px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
+  }
+
+  .baguette-img {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 40px;
+    height: auto;
+    color: white; /* Or any color you prefer */
+  }
+
+  #baguette-img {
+    position: absolute;
+    top: 10px;
+    width: 40px;
+    height: auto;
+    color: white; /* Or any color you prefer */
+  }
+
+  .epicbaguette-img {
+    position: absolute;
+    top: 55px;
+    left: 10px;
+    width: 35px;
+    height: auto;
+    color: white; /* Or any color you prefer */
+  }
+
+  #epicbaguette-img {
+    position: absolute;
+    top: 10px;
+    width: 40px;
+    height: auto;
+    color: white; /* Or any color you prefer */
+  }
+
+  .researchbaguette-img {
+    position: absolute;
+    top: 100px;
+    left: 10px;
+    width: 35px;
+    height: auto;
+    color: white; /* Or any color you prefer */
+  }
+
+  #researchbaguette-img {
+    position: absolute;
+    top: 10px;
+    width: 40px;
+    height: auto;
+    color: white; /* Or any color you prefer */
+  }
+
+  .BPS-text {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: white; /* Or any color you prefer */
+    z-index: 2; /* Ensures it appears above other elements */
+    font-family: 'Silkscreen', sans-serif;
+    font-size: 24px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
+  }
+
+  .RBoost-text {
+    position: absolute;
+    top: 50px;
+    right: 10px;
+    color: rgb(56, 186, 238); /* Or any color you prefer */
+    z-index: 2; /* Ensures it appears above other elements */
+    font-family: 'Silkscreen', sans-serif;
+    font-size: 24px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
+  }
+
+
+  .epicbaguette-text {
+    position: absolute;
+    top: 55px;
+    left: 60px;
+    color: purple; /* Or any color you prefer */
+    z-index: 2; /* Ensures it appears above other elements */
+    font-family: 'Silkscreen', sans-serif;
+    font-size: 40px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
+  }
+
+  .researchbaguette-text {
+    position: absolute;
+    top: 100px;
+    left: 60px;
+    color: rgb(56, 186, 238); /* Or any color you prefer */
+    z-index: 2; /* Ensures it appears above other elements */
+    font-family: 'Silkscreen', sans-serif;
+    font-size: 40px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
+  }
+  
+  /* Style for Furnace Image/Button */
+  .furnace-container {
+    position: absolute;
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Center the container */
+  }
+  
+  #furnace-button {
+    width: 200px; /* Adjust dimensions as needed */
+    height: auto;
+    cursor: pointer; /* Change cursor to indicate it's clickable */
+  }
+
+  @keyframes furnaceClick {
+    0% {
+      width: 200px;
+    }
+    50% {
+      width: 225px;
+    }
+    100% {
+      width: 200px;
+    }
+}
+
+.furnaceClick {
+    animation: furnaceClick 0.3s;
+}
+
+.bakery-container {
+    position: fixed; /* Fixed positioning */
+    bottom: 10px; /* 10px from the bottom */
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%); /* Center the container */
+    cursor: pointer; /* Change cursor to indicate it's clickable */
+  }
+  
+  /* Style for Arrow Button Image */
+  #bakery-button {
+    width: 50px; /* Adjust dimensions as needed */
+    height: auto;
+  }
+
+.bakery-text-container {
+    position: fixed; /* Fixed positioning */
+    bottom: 70px; /* 10px from the bottom */
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%); /* Center the container */
+    cursor: pointer; /* Change cursor to indicate it's clickable */
+    font-family: 'Silkscreen', sans-serif;
+}
+
+#bakery-locked-text {
+    color: red;
+    font-size: 15px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
+}
+
+/* for market */
+.market-container {
+  position: fixed; /* Fixed positioning */
+  bottom: 10px; /* 10px from the bottom */
+  left: 10px; /* 10px from the left */
+  cursor: pointer; /* Change cursor to indicate it's clickable */
+}
+
+/* Style for Arrow Button Image */
+#market-button {
+  width: 50px; /* Adjust dimensions as needed !!!! changed the width*/
+  height: auto;
+}
+
+.market-text-container {
+  position: fixed; /* Fixed positioning */
+  bottom: 70px; /* 70px from the bottom */
+  left: 10px; /* 10px from the left */
+  cursor: pointer; /* Change cursor to indicate it's clickable */
+  font-family: 'Silkscreen', sans-serif;
+}
+
+#market-locked-text {
+  color: red;
+  font-size: 15px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
+}
+
+@keyframes cantPurchase {
+    0% {
+        font-size: 100%;
+    }
+    50% {
+        font-size: 120%;
+    }
+    100% {
+        font-size: 100%;
+    }
+}
+
+.cantPurchase {
+    animation: cantPurchase 0.3s;
+}
+
+.tile-title {
+  color: #00ff00;
+  font-family: 'Silkscreen', sans-serif;
+  font-size: 15px;
+  z-index: 2;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
+}
+
+.buy-clicker-container {
+  position: absolute; /* Fixed positioning */
+  top: 50%; /* Center vertically */
+  left: 80%; /* Center horizontally */
+  transform: translate(-50%, -50%); /* Center the container */
+  width: 400px;
+  cursor: pointer; /* Change cursor to indicate it's clickable */
+}
+
+#buy-clicker-button {
+  width: 100px; /* Adjust dimensions as needed */
+  height: auto;
+  cursor: pointer;
+}
+
+#buy-clicker-title {
+  position: absolute;
+}
+
+@keyframes furnaceUpgradeClick {
+  0% {
+    width: 100px;
+  }
+  50% {
+    width: 120px;
+  }
+  100% {
+    width: 100px;
+  }
+}
+
+.furnaceUpgradeClick {
+  animation: furnaceUpgradeClick 0.3s;
+}
+
+.research-container {
+  position: fixed; /* Fixed positioning */
+  top: 10px; /* 10px from the bottom */
+  left: 50%; /* Center horizontally */
+  transform: translateX(-50%); /* Center the container */
+}
+
+#research-arrow {
+  rotate: 180deg;
+  width: 50px; /* Adjust dimensions as needed */
+  height: auto;
+  cursor: pointer;
+}
+
+.research-text-container {
+  position: fixed; /* Fixed positioning */
+  color: #00ff00;
+  font-size: 15px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
+  font-family: 'Silkscreen', sans-serif;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 50px;
+  z-index: 2;
+}
+
+#research-locked-text {
+  color: red;
+  font-size: 15px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
+}
+
+
+
+.altar-container {
+  position: fixed; /* Fixed positioning */
+  top: 50%; /* 10px from the bottom */
+  left: 30px; /* Center horizontally */
+  transform: translateX(-50%); /* Center the container */
+}
+
+#altar-arrow {
+  rotate: 90deg;
+  width: 50px; /* Adjust dimensions as needed */
+  height: auto;
+  cursor: pointer;
+}
+
+.altar-text-container {
+  position: fixed; /* Fixed positioning */
+  color: #00ff00;
+  font-size: 15px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
+  font-family: 'Silkscreen', sans-serif;
+  top: 50%; /* 10px from the bottom */
+  left: 10px; /* Center horizontally */
+  transform: translateY(-50%); /* Center the container */
+  z-index: 2;
+}
+
+#altar-locked-text {
+  color: red;
+  font-size: 15px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
+}
+
+
+.tooltip {
+  position: absolute;
+  display: inline-block;
+  cursor: pointer;
+}
+
+/* Style for the tooltip text */
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  /*padding: 5px;*/
+  position: absolute;
+  z-index: 1;
+  top: -5px;
+  left: 150%;
+  margin-left: -60px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+/* Show the tooltip text when hovering over the tooltip container */
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}

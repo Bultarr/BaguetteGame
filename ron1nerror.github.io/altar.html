@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Baguette Clicker</title>
+    <link rel="stylesheet" href="./altarstyle.css">
+    <script src="./script.js"></script>
+</head>
+
+
+<body onload="loadGame()">
+
+  <div class="baguette-text"><span id="baguette-count">0</span></div>
+  <div class="baguette-img"><img id="baguette-img" src="./baguette.png" alt="Baguette"></img></div>
+  
+  <div class="epicbaguette-text"><span id="epicbaguette-count">0</span></div>
+  <div class="epicbaguette-img"><img id="epicbaguette-img" src="./epicbaguette.png" alt="EpicBaguette"></img></div>
+  
+  <div class="researchbaguette-text"><span id="researchbaguette-count">0</span></div>
+  <div class="researchbaguette-img"><img id="researchbaguette-img" src="./researchbaguette.png" alt="ResearchBaguette"></img></div>
+  
+<div class="BPS-text">BPS: <span id="BPS-count">0</span></div>
+<div class="RBoost-text">RB Boost: <span id="RBoost-count">0</span>x</div>
+
+<div class="altar-container">
+  <img src="./altar.png" alt="Altar" id="altar-button" onclick="altarSacrifice()">
+</div>
+
+
+<div class="furnace-text-container">
+  <span> Go to Furnace</span>
+</div>
+
+<div class="furnace-container">
+  <img src="./arrowDown.png" alt="Arrow Button" id="furnace-arrow" onclick="goFurnace()">
+</div>
+
+<div class="altar-info-container">
+  <span class="tile-title explainer-text1"> The Baguette Gods take generous offers of at least 1 Million Baguettes. Each sacrifice, they take 50% of your total baguettes, and in return, give you a small amount of epic baguettes.</span>
+</div>
+</body>
+</html>
